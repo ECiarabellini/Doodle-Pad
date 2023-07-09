@@ -1,11 +1,17 @@
-body {
-    background-color: darkslategray;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body{
+    background-color: #3EB489;
+    font-family: Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: antiquewhite;
+    border-radius: 30px;
+}
+#title{
+    font-size: 40px;
+    font-weight: 600;
+    font-variant: small-caps;
 }
 
 #pad{
@@ -15,19 +21,39 @@ body {
     width: 400px;
     height: auto;
     margin: 0px;
-    padding: 0px;  
+    padding: 0px;
+    border-color: antiquewhite;  
 }
 
 .squares{
     width: 25px;
     height: 25px;
     border: 1px solid antiquewhite;
-    background-color: lightsalmon;
+    background-color: #FFC0B4;
     min-width: 0px;
     min-height: 0px;
     /* flex: 1, 1, 50px; */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box
+}
 
+#user-selections{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+    font-variant: small-caps;
+}
+
+button{
+    background-color: antiquewhite;
+    height: 50px;
+    border-radius: 8px;
+    color: #011a1a;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+button:active{
+    background-color: darkmagenta;
 }
