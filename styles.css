@@ -25,18 +25,45 @@ body{
     border-color: antiquewhite;  
 }
 
-.squares{
+.smallSquares{
+    /*40 squares across */
+    width: 10px;
+    height: 10px;
+    border: 1px solid antiquewhite;
+    background-color: #FFC0B4;
+    min-width: 0px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+.mediumSquares{
+    /*16 squares across */
     width: 25px;
     height: 25px;
     border: 1px solid antiquewhite;
     background-color: #FFC0B4;
     min-width: 0px;
     min-height: 0px;
-    /* flex: 1, 1, 50px; */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box
 }
+
+.largeSquares{
+    /*4 squares across */
+    width: 100px;
+    height: 100px;
+    border: 1px solid antiquewhite;
+    background-color: #FFC0B4;
+    min-width: 0px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
 
 #user-selections{
     font-size: 30px;
