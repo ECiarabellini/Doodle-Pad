@@ -81,6 +81,6 @@ button{
     font-variant: small-caps;
 }
 
-button:active{
+#reset:active{
     background-color: darkmagenta;
 }
