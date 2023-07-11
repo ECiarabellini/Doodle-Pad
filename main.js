@@ -4,14 +4,15 @@ resetButton.addEventListener('click', () => location.reload());
 const buttonSmall = document.querySelector('#small');
 const buttonMedium = document.querySelector('#medium');
 const buttonLarge = document.querySelector('#large');
-buttonMedium.setAttribute('style', 'background-color: darkmagenta;');
+buttonMedium.setAttribute('style', 'background-color: darkmagenta;'); //default starting grid
 
 const pad = document.querySelector("#pad");
 let squareClass; 
 let numSquares;
 
+
 function createGrid(size){
-    pad.replaceChildren();
+    pad.replaceChildren();   //replace previous grid each time a size is selected
     if (size == "small"){
         numSquares = 1600;
         squareClass = "smallSquares";
@@ -37,8 +38,6 @@ function createGrid(size){
         pad.appendChild(newSquare);
     };
     setDrawColor(squareClass);
-    console.log("2.squareClass is: " + squareClass);
-    console.log("2.numSquares is " + numSquares);
 };
 
 
@@ -52,13 +51,10 @@ function setDrawColor (squareClass) {
 };
 
 
-createGrid("medium");
+createGrid("medium");  //default starting grid
 
 const buttons = document.querySelectorAll('button');
-buttons.forEach((button) =>{button.addEventListener('click', () => {
-    console.log(button.innerText);
+buttons.forEach((button) => {button.addEventListener('click', () => {
+    //console.log(button.innerText);
     createGrid(button.innerText);
     })});
-
-// buttons.forEach((button) =>{
-//     button.addEventListener('click', function(e) {console.log(e);});});
